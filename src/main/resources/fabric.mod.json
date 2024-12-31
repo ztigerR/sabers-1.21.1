@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sabers",
+	"version": "${version}",
+	"name": "Sabers",
+	"description": "Lightsaber mod",
+	"authors": [
+		"ztigerR"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/sabers/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.ztigerr.saber.Sabers"
+		],
+		"fabric-datagen": [
+			"net.ztigerr.saber.SabersDataGenerator"
+		],
+		"client": [
+			"net.ztigerr.saber.SabersClient"
+		]
+	},
+	"mixins": [
+		"sabers.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
