@@ -11,5 +11,10 @@
   "block.sabers.pink_garnet_deepslate_ore": "Pink Garnet Deepslate Ore",
   "block.sabers.magic_block": "Magic Block",
 
-  "itemgroup.sabers.pink_garnet_items": "Pink Garnet Items"
+  "itemgroup.sabers.pink_garnet_items": "Pink Garnet Items",
+
+  "tooltip.sabers.magic_block": "This block is very, very §9MAGICAL§r",
+  "tooltip.sabers.chisel.shift_down": "This item chisels blocks into bricks",
+  "tooltip.sabers.chisel": "Press §eShift§r for more information",
+  "tooltip.sabers.cauliflower": "This is very delicious!"
 }
