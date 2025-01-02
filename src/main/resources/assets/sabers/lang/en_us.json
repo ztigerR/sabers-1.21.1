@@ -3,5 +3,7 @@
   "item.sabers.raw_pink_garnet": "Raw Pink Garnet",
 
   "block.sabers.pink_garnet_block": "Block of Pink Garnet",
-  "block.sabers.raw_pink_garnet_block": "Block of Raw Pink Garnet Block"
+  "block.sabers.raw_pink_garnet_block": "Block of Raw Pink Garnet Block",
+
+  "itemgroup.sabers.pink_garnet_items": "Pink Garnet Items"
 }
