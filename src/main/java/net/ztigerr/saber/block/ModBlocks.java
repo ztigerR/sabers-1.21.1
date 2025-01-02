@@ -33,7 +33,7 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(2,5),
                     AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
-    public static final Block MAGIC_BLCOK = registerBlock("magic_block",
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block",
             new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
 
     private static Block registerBlock(String name, Block block){
@@ -58,7 +58,7 @@ public class ModBlocks {
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
-            entries.add(ModBlocks.MAGIC_BLCOK);
+            entries.add(ModBlocks.MAGIC_BLOCK);
         });
 
     }

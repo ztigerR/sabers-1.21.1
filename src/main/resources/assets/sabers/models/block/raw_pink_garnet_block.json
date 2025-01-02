@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "sabers:block/raw_pink_garnet_block"
-  }
-}
