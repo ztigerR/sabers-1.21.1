@@ -2,6 +2,7 @@ package net.ztigerr.saber;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.ztigerr.saber.block.ModBlocks;
 import net.ztigerr.saber.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,5 +23,6 @@ public class Sabers implements ModInitializer {
 
 		LOGGER.info("Hello Fabric world!");
 		ModItems.regitsterModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
