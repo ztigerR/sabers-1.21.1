@@ -13,6 +13,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.ztigerr.saber.Sabers;
+import net.ztigerr.saber.block.custom.MagicBlock;
 
 //double tap shift to look up blocks class from minecraft to see other attributes that you can give to blocks
 public class ModBlocks {
@@ -32,6 +33,9 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(2,5),
                     AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
+    public static final Block MAGIC_BLCOK = registerBlock("magic_block",
+            new MagicBlock(AbstractBlock.Settings.create().strength(1f).requiresTool()));
+
     private static Block registerBlock(String name, Block block){
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(Sabers.MOD_ID, name), block);
@@ -47,6 +51,16 @@ public class ModBlocks {
             entries.add(ModBlocks.PINK_GARNET_BLOCK);
             entries.add(ModBlocks.RAW_PINK_GARNET_BLOCK);
         });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries ->{
+            entries.add(ModBlocks.PINK_GARNET_ORE);
+            entries.add(ModBlocks.PINK_GARNET_DEEPSLATE_ORE);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
+            entries.add(ModBlocks.MAGIC_BLCOK);
+        });
+
     }
 
 }
