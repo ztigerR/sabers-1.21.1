@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.ztigerr.saber.block.ModBlocks;
+import net.ztigerr.saber.component.ModDataComponentTypes;
 import net.ztigerr.saber.item.ModItemGroups;
 import net.ztigerr.saber.item.ModItems;
 import org.slf4j.Logger;
@@ -27,6 +28,7 @@ public class Sabers implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModItems.regitsterModItems();
 		ModBlocks.registerModBlocks();
+		ModDataComponentTypes.registerDataComponentTypes();
 
 		FuelRegistry.INSTANCE.add(ModItems.STARLIGHT_ASHES, 600);
 
